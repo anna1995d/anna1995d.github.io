@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Anahita Doosti Sanjani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ADS<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+
+    <div class="page-hero">
+      <p class="section-label">Work &amp; Research</p>
+      <h1 class="section-title">Projects</h1>
+    </div>
+
+    <section>
+      <p class="section-label">Published Research</p>
+      <h2 class="section-title">Publication</h2>
+      <div class="pub-card">
+        <p class="pub-venue">ICCC 2023 — 14th International Conference on Computational Creativity</p>
+        <h3>Transfer Learning for Underrepresented Music Generation</h3>
+        <p>2023 &middot; Research on adapting generative models via transfer learning to produce music outside their training distribution. Achieved a performance improvement from 86.5% to 96.3% on out-of-distribution datasets by building on Google Magenta's open-source MusicVAE.</p>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Technical Work</p>
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <p class="project-year">2025</p>
+          <h3>LLM-Powered Productivity Tool</h3>
+          <p>A scheduling and task-breakdown assistant with a conversational chat interface. Uses Retrieval Augmented Generation (RAG) to inject relevant context into prompts, enabling grounded and accurate responses.</p>
+          <div class="project-tags">
+            <span class="tag">OpenAI API</span>
+            <span class="tag">RAG</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <p class="project-year">2021 – 2023</p>
+          <h3>Transfer Learning for Underrepresented Music Generation</h3>
+          <p>M.Sc. thesis project adapting Google Magenta's MusicVAE to generate out-of-distribution music using transfer learning. Improved OOD performance from 86.5% to 96.3% by expanding on the open-source Magenta repository.</p>
+          <div class="project-tags">
+            <span class="tag">TensorFlow / Keras</span>
+            <span class="tag">VAE</span>
+            <span class="tag">Transfer Learning</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <p class="project-year">2022</p>
+          <h3>Few-Shot Game Level Updating</h3>
+          <p>Developed a few-shot level updating system for procedural content generation using generative models, transfer learning, LSTMs, and VAEs. Enables rapid adaptation to new game environments from minimal examples.</p>
+          <div class="project-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">VAE</span>
+            <span class="tag">Transfer Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <p class="project-year">2021</p>
+          <h3>Pneumonia Detection in Chest X-ray Images</h3>
+          <p>End-to-end medical imaging pipeline combining segmentation and classification. A U-Net isolates the lung region; a CNN then classifies pneumonia presence — achieving robust detection without manual region annotation.</p>
+          <div class="project-tags">
+            <span class="tag">U-Net</span>
+            <span class="tag">CNN</span>
+            <span class="tag">TensorFlow / Keras</span>
+            <span class="tag">Medical Imaging</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <p class="project-year">2018</p>
+          <h3>Impact of Slang on Review Post Engagement</h3>
+          <p>ML research project commissioned by a UoA Business lab (team of 5). Applied NLP techniques and multiple classifiers — SVMs, Logistic Regression, Naive Bayes, and Neural Networks — to analyze how slang affects reader interaction with review content.</p>
+          <div class="project-tags">
+            <span class="tag">NLP</span>
+            <span class="tag">SVM</span>
+            <span class="tag">Logistic Regression</span>
+            <span class="tag">Neural Networks</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <p class="project-year">2017</p>
+          <h3>Digital Signature Verification via One-Shot Learning</h3>
+          <p>Built a digital signature verification system using Siamese Networks and LSTMs, enabling accurate identity verification from very few training examples — a challenging one-shot learning problem.</p>
+          <div class="project-tags">
+            <span class="tag">Siamese Networks</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">One-Shot Learning</span>
+            <span class="tag">Keras / TensorFlow</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <p class="project-year">2017</p>
+          <h3>Personal Finance Management Website</h3>
+          <p>Full-stack personal finance web application with user accounts, transaction tracking, and reporting — built with a PHP back-end, HTML/CSS front-end, and MySQL database.</p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Anahita Doosti Sanjani</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
